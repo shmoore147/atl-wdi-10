@@ -8,25 +8,24 @@
 // For each expression below, indicate whether it is 'truthy' or 'falsey'
 // by assigning the appropriate variable a value of either `true` or `false`.
 
-// 1. true || false 
+// 1. true || false
 var resOne;
-// Replace This Comment With Your Code
-
+resOne=true
 // 2. null || ''
 var resTwo;
-// Replace This Comment With Your Code
+resOne=false
 
 // 3. 'false' && true
 var resThree;
-// Replace This Comment With Your Code
+resOne=true
 
 // 4. !!0
 var resFour;
-// Replace This Comment With Your Code
+resOne=false
 
 // 5. !null && !undefined
 var resFive;
-// Replace This Comment With Your Code
+resOne=true
 
 /// Flow Control ///
 
