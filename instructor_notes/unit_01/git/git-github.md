@@ -31,9 +31,26 @@ creator:
 <br />
 
 ## Hook (5m)
-When you think back to a favorite trip, you most likely took a lot of snapshots, maybe you created a photo album as a keepsake upon return.  You have these moments, that allow you to time travel back to those moments and remember what happened.
+When you think back to a favorite trip, you most likely took a lot of photos.  You have these moments, that allow you to time travel back to those moments and remember what happened.
 
-These are some snapshots from a trip that I took to Nepal to meet with a group called Women's Empowerment.  These women were trying to teach others skills so that they could earn an independent living and help their families.  The group also provided scholarships to girls so that they could attend school.
+These are some snapshots from a recent trip to New York.
+
+### Blue Bottle
+![](https://i.imgur.com/qfALEqw.png)
+
+### Little Italy
+![](https://i.imgur.com/9fAu6x9.png)
+
+### At MOMA
+![](https://i.imgur.com/h0HW09p.png)
+
+### Gustav Klimt- Hope, ||
+![](https://i.imgur.com/IlcrZhA.png)
+
+### Andy Warhol's- Portraits of Marilyn Monroe
+![](https://i.imgur.com/05cMsBV.png)
+
+<!-- These are some snapshots from a trip that I took to Nepal to meet with a group called Women's Empowerment.  These women were trying to teach others skills so that they could earn an independent living and help their families.  The group also provided scholarships to girls so that they could attend school.
 ### Women's Empowerment leaders
 ![Women's empowerment leaders](https://i.imgur.com/Zwaa4Bw.jpg)
 ### View of the Himalayas
@@ -45,9 +62,9 @@ These are some snapshots from a trip that I took to Nepal to meet with a group c
 ### Prayer bells at the Monkey Temple
 ![Prayer bells at the Monkey temple](https://i.imgur.com/nVGfRYz.jpg)
 ### Traditional Women's Clothing
-![Traditional dress](https://i.imgur.com/rMFihvS.jpg)
+![Traditional dress](https://i.imgur.com/rMFihvS.jpg) -->
 
-Similarly, git is a software that allows us to keep track, or keep snapshots, of our projects as we develop them.
+Similarly, git is a **distributed version control system** that allows us to keep track, or keep snapshots, of our projects as we develop them.
 
 <br />
 
@@ -55,15 +72,20 @@ Similarly, git is a software that allows us to keep track, or keep snapshots, of
 
 ## YOU DO (15m)
 
-Spend the next 15 minutes reading the first 4 chapters from this website: https://swcarpentry.github.io/git-novice/01-basics/
-- Automated version control
-- Setting up git
-- Creating a repository
-- Tracking change 
+Spend the next 15 minutes reading the first 4 sections from this website, Pro Git: https://git-scm.com/book/en/v2
+- Getting Started - About Version Control
+- A Short History of Git
+- Git Basics
+- The Command Line
+
+<!-- https://www.atlassian.com/git/tutorials/what-is-version-control
+- What is version control
+- What is Git 
+- Why Git for your Organization -->
 
 <br />
 
-### Then, spend the next few minutes discussing the following questions with your buddy (3m)
+### Then, discussing the following questions with your buddy (3m)
   - Assuming that version control systems did not exist, how would you:
     - Share your source code with other developers?
     - Collaborate with other developers
@@ -103,6 +125,8 @@ Spend the next 15 minutes reading the first 4 chapters from this website: https:
     - Experiment with various ideas and either keep or discard your experiments.
     - Keep multiple changes isolated until they are ready to be integrated.
 
+<br />
+
 ### What if you could live your life using a Version Control System?
 
 * Should I go back to school or move to Europe?
@@ -132,7 +156,7 @@ A codebase in Git is referred to as a **repository**, or **repo**, for short.
 
 Git is pretty confusing and complex at first, but I have full confidence that you will pick it up before you know it. When we talk about repos and codebases we are really talking about a directory that has a file in it named `.git`. This .git file is very important.  It tells **git binary** to treat the directory as a repo and listen for changes, track files, and run git-related tasks when asked.
 
-Git was created by [Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds), the principal developer of Linux.
+Git was created by [Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds), the principal developer of [Linux kernel](https://en.wikipedia.org/wiki/Linux_kernel).
 
 **I DO:** I'll `ls -A` into our class repo and show the `.git` directory.
 
@@ -151,7 +175,7 @@ Git was created by [Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds
 
 ### Can you use git without GitHub?
 
-Think about this quote: “Git is software. GitHub is company that happens to use Git software.”  
+Think about this quote: “Git is software. GitHub is a company that happens to use Git software.”  
 
 **Exercise:** If you think this statement is true, react to with a thumbs up.  If you think it is false, a thumbs down. 
 
@@ -162,7 +186,7 @@ The answer is true!
 
 Git and Github just share a similar name, but GitHub is a platform in the browser where we can share repos/code with each other. And we use git, locally, to keep track of our files, and then we push those files/changes to GitHub.
 
-You can certainly use Git without GitHub! The Visual Studio Team offers a version control.  And Bitbucket also has one. But GitHub is an industry standard.
+You can certainly use Git without GitHub! The Visual Studio Team offers a version control system.  And Bitbucket also has one. But GitHub is an industry standard.
 
 <br />
 
@@ -176,7 +200,7 @@ I don't need to explain music theory to you in order to play the guitar.  It may
 
 Today, we will learn a bit about how Git works, enough to learn how to use it for this class - by keeping track of homework and classwork. Through this process, we will better understand how we will use it as professional developers.
 
-> Things we did not discuss/need to know right now, but might be curious to know about in the future!
+> Things we did not discuss/need to know right now, but you might be curious to know more about/research in the future!
 
 - [Directed acyclic graph](https://en.wikipedia.org/wiki/Directed_acyclic_graph)
 - [SHA-1](https://en.wikipedia.org/wiki/SHA-1)
@@ -188,7 +212,7 @@ Today, we will learn a bit about how Git works, enough to learn how to use it fo
 Even though you don't need to know how they work, it is useful to know that your local repository consists of three "trees" that are maintained by Git.
 
 - **Working Directory**: the directory and subdirectories containing the files we are currently working on and which holds the actual files.
-- **Index/Staging**: a staging area where we list the changes we want to commit
+- **Index/Staging Area**: a staging area where we list the changes we want to commit
 - **HEAD**: which points to the last commit you have made 
 
 ### More terminology
@@ -198,7 +222,8 @@ Even though you don't need to know how they work, it is useful to know that your
 - **Master** - the default name for the "main" development branch
 
 <!-- ![workflow](https://cloud.githubusercontent.com/assets/40461/8221736/f1f7e972-1559-11e5-9dcb-66b44139ee6f.png) -->
-![workflow](https://i.imgur.com/Y7wd0Yd.png)
+<!-- ![workflow](https://i.imgur.com/Y7wd0Yd.png) -->
+![workflow](https://i.imgur.com/QDbCnZy.png)
 
 <br />
 
@@ -210,7 +235,7 @@ There are a lot of commands available for git. You can look at the list of these
 $ git help -a
 ```
 
-We can see that there is an inordinate amount of commands, however, during this course we will probably only utilize about 10 of them.
+We can see that there is a large number of commands, however, during this course we will probably only utilize about 10 of them.
 
 <br />
 
@@ -264,7 +289,7 @@ If we look at the contents of this empty folder using:
 $ ls -A
 ```
 
-- What does `la` mean?
+- What does `ls` mean?
 - What does `-A` mean?
 
 We should see that there is now a hidden folder called `.git`. This is where all of the information about your project is stored. This folder allows us to control our git flow using `git` commands.  **If you delete this folder, you will lose your project's history.** So, just don't do it.
@@ -622,7 +647,7 @@ As a developer, you will use Git everyday. The learning curve is steep and all o
 Don't get frustrated by all of the new commands because we will have plenty of time to practice them during this course.
 
 
-##BREAK
+## BREAK
 
 
 ## Labtime
