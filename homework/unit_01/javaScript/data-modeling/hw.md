@@ -60,13 +60,31 @@ track of whether tasks have been completed, it will also keep track of
 how long each task took to complete. Tasks can be grouped into 'projects' to
 keep them organized.
 
-> Answer here
+task = {
+  name: "Go to Starbucks",
+  startTime: 9,
+  endTime: 10,
+}
+
 
 ### 2. Photo Sharing App
 
 In this app, users can upload photos to their accounts and share them with others. These photos can be grouped into albums.
+photo = {
+  name:
+  date:
+  URL:
+}
 
-> Answer here
+album = {
+  name:
+  photos:
+}
+user = {
+  username:
+  uploadedPhotos:
+  albumsCreated:
+}
 
 ### 3. Home Automation Manager
 
@@ -75,16 +93,37 @@ track of the time and temperature of the house that it monitors, and use that
 information to turn on and off different lights and adjust the thermostat up
 and down.
 
-> Answer here
+light = {
+  brightness:
+  location:
+  name:
+}
 
+home = {
+  temperature:
+  lights:
+}
 ### 4. Sneaker Store
 
 This app will allow customers to browse a list of products (sneakers, in this
 case), add those products to a cart, and save that cart as a past order once the
 purchase is complete.
 
-> Answer here
+product = {
+  name:
+  description:
+  price:
+}
 
+orderItem = {
+  product:
+  quantity:
+}
+order = {
+  orderItems:
+  status:
+  date:
+}
 ## Representing Abstractions in Code
 
 Once you've chosen the abstractions that your app will use, the next step is to
@@ -139,7 +178,8 @@ var exampleLine = {
 
 What are some advantages and disadvantages of choosing these representations? Please give at least one example of each.
 
-> Answer here
+A major disadvantage of choosing three representations is that it doesn't store the info that the app was created for (the time it takes to get from one place to another). an advantage is that teach station can be referenced by the name it was given.
+
 
 ### 6. Doctor Appointment App
 
@@ -242,7 +282,8 @@ Under what circumstances might one representation be a better choice than the
 other? Are there any circumstances in which the other representation might be
 the better choice?
 
-> Answer here
+The representation of the first approac makes finding all of the appointments easy. The second approach makes it a little hard to find all of the appointments. This approach might work better though when it comes to people that don't have very many appointments to keep track of.
+
 
 ## Tying It Together
 
@@ -253,13 +294,30 @@ You've been tasked with building an in-browser tic-tac-toe game.
 a.  What are some possible entities that your application might use to model its
     data? Please pick at least two, with at least two properties apiece.
 
-  > Answer here
-
+players = {
+  username: shm147,
+  avatar image: img.png,
+}
+game = {
+  xPlayer: Sarah,
+  oPlayer: Clarke,
+}
 b.  How might those entities be represented in JavaScript code?
 
-  > Answer here
+var examplePlayer = {
+  username: 'shm147',
+  avatarURL: 'img.png'
+};
+var exampleGame = {
+  xPlayer: {
+    username: 'shm147',
+    avatarURL: 'img.png,
+  oPlayer: {
+    username: "clarke6",
+    avatarURL: "imageclarke.png"
+  }
+  }
 
 c.  Justify your choices in a) and b). Why these entities? Why these
     representations?
-
-  > Answer here
+well, because those two are the two that are most important when it comes to playing a game of tick tac toe. The representations are pretty similar because one uses the other.
