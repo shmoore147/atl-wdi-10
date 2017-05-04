@@ -1,1 +1,28 @@
-/* Add your CSS code here. */
+.container-fluid {
+  background-color: grey;
+}
+
+body {
+  text-align: center;
+  color: white;
+}
+
+p {
+  float: left;
+  font-size: 16px;
+}
+
+h1 {
+font-style: oblique;
+}
+h2 {
+float: left;
+}
+
+img {
+  float: right;
+}
+
+main {
+  color: white;
+}
