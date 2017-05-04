@@ -64,10 +64,17 @@ const Presenter = {
 // Top-Level Application Control //
 const AppController = {
   onClickNewCounter: function(event){
-    // Your Code Here
+    var $newCounter = $("button");
+    $newCounter.on("click", function() {
+        // alert("This works!"); works
+        // $("#counter-list").append("<div class='counter' data-index='2'>"); WORKS
+        $("#counter-list").append("<div class='counter' data-index='2'>");
+        $("#counter-list").append("<h3>Count: <span>0</span></h3>");
+        $("#counter-list").append("<button class='increment'> + 1 </button>");
+    });
   },
   onClickIncrement: function(event){
-    // Your Code Here
+    // $(.increment).
   },
   onClickDelete: function(event){                           // REACH
     // Your Code Here

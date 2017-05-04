@@ -7,7 +7,7 @@
 // Data Management and Business Logic //
 const CounterCollection = {
   lastCountId: 0,
-  counters: [], // e.g. {countId: 3, count: 20}
+  counters: [3], // e.g. {countId: 3, count: 20}
   createCounter: function(){
     this.lastCountId++;
     this.counters.push({

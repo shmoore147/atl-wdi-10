@@ -20,10 +20,11 @@ main {
 }
 
 .counter {
-  border: black solid 1px;
-  margin: 1px;
+  border: black solid 2px;
+  margin: 5px;
   text-align: center;
   background-color: violet;
   width: 150px;
+  height: 75px;
   float: left;
 }

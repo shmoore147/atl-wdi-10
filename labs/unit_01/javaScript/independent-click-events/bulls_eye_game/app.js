@@ -21,7 +21,7 @@ window.onload = function() {
 }
 var bullseyeGame = {
   score: 0,
-  
+
   updateScore: function(points) {
     var scoreElement = document.querySelector('.score');
     this.score += points
@@ -66,13 +66,16 @@ var bullseyeGame = {
   middleRing: function(event) {
     event.stopPropagation();
     alert('Middle ring was clicked');
+    middleRing.style.backgroundColor = "yellow";
     bullseyeGame.updateScore(50);
+
   },
 
   bullseye: function(event) {
     event.stopPropagation();
     alert('Bullseye!');
     bullseyeGame.updateScore(100);
+
 
 
 
