@@ -1,28 +1,59 @@
-.container-fluid {
-  background-color: grey;
-}
-
 body {
-  text-align: center;
+  text-align: left;
   color: white;
+  background-color: dimgray;
+  font-family: "arial", sans-serif;
+  border: 4px solid darkgray;
+  margin: 30px 30px 200px 30px;
 }
 
 p {
-  float: left;
-  font-size: 16px;
+  padding: 0px 0px 0px 90px;
+}
+a {
+  /*text-align: center;*/
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
 }
 
 h1 {
-font-style: oblique;
+  text-align: center;
+  padding: 2px 0px 0px 20px;
+  font-style: italic;
 }
-h2 {
-float: left;
+nav {
+  text-align: center;
+}
+footer  {
+  text-align: center;
 }
 
+h2 {
+  text-align: left;
+  padding: 0px 0px 0px 20px;
+  text-align: left;
+}
+
+h3 {
+  text-align: left;
+  padding: 0px 0px 0px 20px;
+  text-align: left;
+}
+
+li {
+  text-decoration: none;
+  text-align: left;
+  padding: 0px 0px 0px 60px;
+}
+
+.intro {
+  text-align: left;
+  padding: 5px 0px 0px 20px;
+}
 img {
   float: right;
-}
-
-main {
-  color: white;
+  padding: 10px;
+  border: 3px solid darkgrey;
+  margin: 20px;
 }
