@@ -1,0 +1,25 @@
+body {
+  background-color: lightseagreen;
+  color: white;
+}
+h1 {
+  text-align: center;
+  color: lightpink;
+  font-family: arial, sans-serif;
+  font-size: 75px;
+  margin: 30px 10px 10px 10px;
+}
+
+h2 {
+  text-align: center;
+  font-family: arial, sans-serif;
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+.square1x1 {
+  display: inline-grid;
+  background-color: white
+  width: 100px;
+  height:100px;
+}
